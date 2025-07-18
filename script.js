@@ -39,5 +39,5 @@ const Learning_done = () => {
 
 learn(2,Learning_done);
 
-//Output after 3 seconds: Learning JAVASCRIPT was chosen. Start classes immediately!
-//Output after 5 seconds: Finished the Lesson!
+//Output after 2 seconds: Learning JAVASCRIPT was chosen. Start classes immediately!
+//Output after 3 seconds: Finished the Lesson!
