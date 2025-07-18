@@ -18,3 +18,24 @@ console.log(
 Upskill_profile.best_hobbies[1]      //Singing
 );
 
+//Callback function
+let Web_dev = {topic:["HTML", "CSS", "JAVASCRIPT"]};
+const learn = (topic_choice,Learning_done) => {
+  setTimeout(() => {
+  console.log (`Learning ${Web_dev.topic[topic_choice]
+    } was chosen. Start classes immediately!`
+  )
+  Learning_done();
+},
+ 3000);
+}
+
+//callback
+const Learning_done = () => {
+  setTimeout(() => {
+    console.log("Finished the Lesson!")
+},
+ 5000);
+}
+
+learn(2,Learning_done);
