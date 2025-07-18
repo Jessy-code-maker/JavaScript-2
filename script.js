@@ -16,7 +16,7 @@ let Upskill_profile = {
 Upskill_profile.greet();              //Hi, my name is Unoaku Anusi and my 3 best hobbies are Reading, Singing, Surfing the Web.
 
 console.log(
-Upskill_profile.best_hobbies[1]);     //Singing
+  `My second best hobby is ${Upskill_profile.best_hobbies[1]}.`);     //My second best hobby is Singing.
 
 
 
@@ -27,14 +27,14 @@ const learn = (topic_choice,Learning_done) => {
   setTimeout(() => {
    console.log (`Learning ${Web_dev.topic[topic_choice]} was chosen. Start classes immediately!`);
   Learning_done();
-}, 3000);           // 3 seconds
+}, 2000);           // 2 seconds
 };
 
 //callback function to be executed after the learning is done
 const Learning_done = () => {
   setTimeout(() => {
     console.log("Finished the Lesson!");
-}, 5000);          // 5 seconds
+}, 3000);          // 3 seconds
 };
 
 learn(2,Learning_done);
